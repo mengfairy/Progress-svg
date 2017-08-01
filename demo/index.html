@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div.progress-inner{
+            position: relative;
+        }
+        .progress-circle-trail{
+            stroke: #f7f7f7;
+        }
+        .progress-circle-path{
+            stroke: #108ee9;
+        }
+        div.progress-inner .progress-text{
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            line-height: 1;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div id="test1"></div>
+<div id="test2"></div>
+</body>
+<script src="./progress.js"></script>
+<script>
+    document.getElementById('test1').appendChild(Progress.circle(12));
+    document.getElementById('test2').appendChild(Progress.dashboard(58));
+</script>
+</html>
